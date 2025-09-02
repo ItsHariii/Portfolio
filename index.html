@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loader"></div>
+    </div>
+    <div id="progress-bar"></div>
+    <nav id="desktop-nav">
+      <div class="logo">Hari Manivannan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hari Manivannan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div id="profile-pic" class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Hari Manivannan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hari Manivannan</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/HM_Resume_2025.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sri-harisuhas-thavittupalayam-manivannan-b2aa42255/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ItsHariii'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Computer Science<br>B.B.A. Computer Information Systems</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hey! I'm Hari Manivannan, a student at Georgia State University with passion for Artificial Intelligence, front-end development, and their potential to solve real-world problems creatively. Beyond coding, I enjoy various forms of art, fitness, and reading books that inspire creativity and self-improvement. My goal has always been to use technology to create innovative solutions to real problems and to learn more and be better than the day before.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <i class="fab fa-python skill-icon"></i>
+                <div>
+                  <h3>Python</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-database skill-icon"></i>
+                <div>
+                  <h3>SQL</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-js skill-icon"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-java skill-icon"></i>
+                <div>
+                  <h3>Java</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-android skill-icon"></i>
+                <div>
+                  <h3>Kotlin</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-html5 skill-icon"></i>
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <i class="fab fa-react skill-icon"></i>
+                <div>
+                  <h3>React.js</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-google skill-icon"></i>
+                <div>
+                  <h3>Google Cloud</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-github skill-icon"></i>
+                <div>
+                  <h3>GitHub</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-code skill-icon"></i>
+                <div>
+                  <h3>VS Code</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-database skill-icon"></i>
+                <div>
+                  <h3>DBeaver</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-terminal skill-icon"></i>
+                <div>
+                  <h3>PowerShell</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI/ML & Data Science</h2>
+            <div class="article-container">
+              <article>
+                <i class="fas fa-brain skill-icon"></i>
+                <div>
+                  <h3>PyTorch</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-robot skill-icon"></i>
+                <div>
+                  <h3>EfficientNet</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-chart-bar skill-icon"></i>
+                <div>
+                  <h3>Pandas</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-infinity skill-icon"></i>
+                <div>
+                  <h3>NumPy</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-chart-line skill-icon"></i>
+                <div>
+                  <h3>Scikit-Learn</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-cloud skill-icon"></i>
+                <div>
+                  <h3>Google Gen AI</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web & App Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fab fa-react skill-icon"></i>
+                <div>
+                  <h3>React Native</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-css3 skill-icon"></i>
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-server skill-icon"></i>
+                <div>
+                  <h3>FastAPI</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fab fa-google skill-icon"></i>
+                <div>
+                  <h3>Firebase</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-cogs skill-icon"></i>
+                <div>
+                  <h3>API Integration</h3>
+                  <p title="Expert">Expert</p>
+                </div>
+              </article>
+              <article>
+                <i class="fas fa-code-branch skill-icon"></i>
+                <div>
+                  <h3>REST APIs</h3>
+                  <p title="Intermediate">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="projects-container">
+        <div class="project-container color-container">
+          <div class="project-pic">
+            <img
+              src="./assets/project-4.png"
+              alt="Cervico Project"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Cervico</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ItsHariii/Cervico'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./projects/cervico.html'"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="project-container color-container">
+          <div class="project-pic">
+            <img
+              src="./assets/project-3.png"
+              alt="Tiny Tasks Project"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Tiny Tasks</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ItsHariii/TinyTasks'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./projects/tinytasks.html'"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="project-container color-container">
+          <div class="project-pic">
+            <img
+              src="./assets/project-1.png"
+              alt="CareMate Project"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">CareMate</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ItsHariii/CareMate'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./projects/caremate.html'"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="project-container color-container">
+          <div class="project-pic">
+            <img
+              src="./assets/project-2.png"
+              alt="NeuroSpeak Project"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">NeuroSpeak</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/ItsHariii/NeuroSpeak'"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='./projects/neurospeak.html'"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sriharisuhas271@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sri-harisuhas-thavittupalayam-manivannan-b2aa42255/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p>+1 678-767-4798</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Hari Manivannan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
